@@ -6,15 +6,13 @@ using System.Threading.Tasks;
 
 namespace HPAPI2
 {
-    internal class Player : GameCharacter
+    internal class Enemy : GameCharacter
     {
 
 
-        public Player(int HP = 100, int Lives = 3, string Name = "name") : base(HP, Lives, Name)
+        public Enemy(int HP = 100, int Lives = 3, string Name = "name") : base(HP, Lives, Name)
         {
 
         }
-
-
     }
 }

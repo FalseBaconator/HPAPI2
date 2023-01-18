@@ -10,8 +10,8 @@ namespace HPAPI2
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("HP API 2.0");
-            Player player = new Player(100, 3);
+            Player player = new Player(100, 3, "Player");
+            Enemy enemy = new Enemy(50, 3, "Enemy");
             player.ShowStats();
             player.TakeDMG(50);
             player.ShowStats();
@@ -21,6 +21,20 @@ namespace HPAPI2
             player.ShowStats();
             player.Heal(25);
             player.ShowStats();
+
+            Console.WriteLine();
+            Console.WriteLine();
+            Console.WriteLine();
+
+            enemy.ShowStats();
+            enemy.TakeDMG(25);
+            enemy.ShowStats();
+            enemy.Heal(10);
+            enemy.ShowStats();
+            enemy.TakeDMG(50);
+            enemy.ShowStats();
+            enemy.Heal(25);
+            enemy.ShowStats();
             Console.ReadKey(true);
         }
 
