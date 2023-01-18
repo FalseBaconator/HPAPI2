@@ -38,6 +38,7 @@ namespace HPAPI2
         {
             Console.WriteLine("gain " + heal + " health");
             HP += heal;
+            if(HP > maxHP) HP = maxHP;
         }
 
         public void ShowStats()

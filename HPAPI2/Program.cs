@@ -19,6 +19,8 @@ namespace HPAPI2
             player.ShowStats();
             player.TakeDMG(100);
             player.ShowStats();
+            player.Heal(25);
+            player.ShowStats();
             Console.ReadKey(true);
         }
 
